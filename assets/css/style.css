@@ -1,10 +1,10 @@
 @font-face {
     font-family: reg;
-    src: url(../Font/OpenSans-Regular.ttf);
+    src: url(../Font/OpenSans-Regular.woff2);
 }
 @font-face {
     font-family: head;
-    src: url(../Font/PlayfairDisplay-Bold.ttf);
+    src: url(../Font/PlayfairDisplay-Bold.woff2);
 }
 
 :root{
