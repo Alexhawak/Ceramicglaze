@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/booking.css">
+    <link rel="stylesheet" href="./assets/css/rep.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+<nav>
+        <img src="./assets/img/logo.png" alt="Ceramic Glaze logo">
+        <div class="nav-wrapper">
+        <div class="nav-link">
+            <a class="invi" href="#">home</a>
+            <a class="invi" href="#page3">services</a>
+            <a class="invi" href="#about">about us</a>
+            <a class="invi" href="#page5">contact</a>
+        </div>
+</div>
+        
+<i class="ri-menu-fill clicki"></i>
+<i class="ri-close-line close"></i>
+</nav>
+
+<div class="frame1">
+
+
+    
+</div>
+
+
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="footer-left">
+            <img src="./assets/img/logo.png" alt="CeramicGlaze Logo">
+            <h3>Crafting Brilliance, Protecting Perfection,</h3>
+            <h3>Experience Luxury, Preserve Your Investment</h3>
+
+            <h4>Add.- &nbsp; CeramicAddress </h4>
+            <h4>Tel.- &nbsp; xxxxxxxx69 </h4>
+        </div>
+        <div class="footer-right">
+            <div class="nav-links-top">
+                <h2>Useful Links</h2>
+                <a href="">Appoinment</a>
+                <a href="">Services</a>
+                <a href="">Abouts Us</a>
+                <a href="">Terms and Conditions</a>
+            </div>
+            <div class="gallery">
+            <h2>OUR GALLARY</h2>
+            <div class="show">
+                <img src="" alt="#">
+                <img src="" alt="#">
+                <img src="" alt="#">
+                <img src="" alt="#">
+                <button id="show">Show More</button>
+            </div></div>
+        </div>
+    </div>
+    <div class="footer-btm">
+        <div class="main-footer">
+           <p><em> Copyright </em> @ 2024 &nbsp; All Right Reserved</p>
+           <div class="links">
+            <div class="face"><i class="ri-facebook-line"></i></div>
+            <div class="insta"><i class="ri-instagram-line"></i></div>
+            <div class="x"><i class="ri-twitter-x-line"></i></div>
+           </div>
+        </div>
+    </div>
+
+</footer>
+<script>
+    let ham =() =>{
+
+var main =document.querySelector(".nav-wrapper")
+var link =document.querySelectorAll(".invi")
+var close =document.querySelector(".close")
+var open=document.querySelector(".clicki")
+open.addEventListener("click",function(){
+    open.style.display = "none";
+    close.style.display ="block"
+    main.classList.toggle("click")
+    
+})        
+close.addEventListener("click",function(){
+    open.style.display = "block";
+    close.style.display ="none"
+    main.classList.toggle("click")
+})
+
+}
+ham()
+
+let o =()=>{
+var main =document.querySelector(".nav-wrapper")
+var link =document.querySelectorAll(".invi")
+var close =document.querySelector(".close")
+var open=document.querySelector(".clicki")
+link.forEach(function(clk){
+    clk.addEventListener("click",function(){
+       open.style.display = "block";
+   close.style.display ="none"
+   main.classList.toggle("click")
+})
+})
+
+}
+if (window.innerWidth < 556) {
+o();
+}
+
+</script>
+
+</body>
+</html>
