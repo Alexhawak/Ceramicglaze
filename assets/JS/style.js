@@ -73,6 +73,34 @@ let o =()=>{
 if (window.innerWidth < 556) {
     o();
 }
+                /* Services */
+
+
+
+let ser = () => {
+    var cards = document.querySelectorAll(".card");
+    var img =document.querySelectorAll(".cardimages");
+    var cnts = document.querySelectorAll(".card-cnt");
+
+    cards.forEach(function(card, index) {
+        card.addEventListener("mouseover", function() {
+            cnts[index].style.display = "block";
+            cnts[index].style.bottom = 0;
+            img[index].style.filter ="blur(3px)";
+
+
+        });
+
+        card.addEventListener("mouseleave", function() {
+            cnts[index].style.display = "none";
+            img[index].style.filter ="blur(0)";
+        });
+    });
+}
+
+ser();
+
+
 
                 /* form */
 
@@ -97,13 +125,13 @@ let click = () => {
 click();
 
 
-let book=()=>{
+let books=()=>{
 
     window.location.href="booking.html";
 }
 
 
-let letsgo=()=>{
+let letsgos=()=>{
     window.location.href="services.html";
 }
 
