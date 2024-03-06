@@ -310,7 +310,7 @@ z-index: -1;
 
         /* Page 3 */
 #page3{
-    height: 100vh;
+    /* height: 100vh; */
     max-width:1200px ;
     margin: auto;
     color: #fff;
@@ -379,7 +379,7 @@ z-index: -1;
 .services > button{
     position: absolute;
     font-size: .9rem;
-    top: 80px;
+    top: -38px;
     right: 5px;
     width: 150px;
     height: 30px;
